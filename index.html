@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>법인카드 계산기</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<header>
+    <div class="orange"></div>
+    <div class="blue"></div>
+</header>
+<section>
+    <h2>공지</h2>
+    <p>2021.07.30 #0_every_공지</p>
+    <p>업무추진비_회식비 (분기별 회식일당일인원수*5만원)</p>
+    <ul>
+        <li>2분기회식비(4~6월분) → 9월까지 이월 (단, 3분기 회식비와 동시 사용 불가, 6월말 재직자 기준 인원수로 사용)</li>
+        <li>3분기회식비(7~9월분) → 9월내 사용</li>
+    </ul>
+    <p>업무추진비_팀비 (월별 팀원수*5만원)</p>
+    <ul>
+        <li>4~6월 이월분 : 7월말까지 사용, 이후 소멸 (기존과 동일, 변경X)</li>
+        <li>7~8월 → 9월까지 사용</li>
+    </ul>
+</section>
+<section>
+    <h2>계산</h2>
+    <input type="number" id="input_member" name="input_member" placeholder="팀 인원">
+    <input type="file" id="input_excel" name="input_excel">
+    <table id="result"></table>
+</section>
+</body>
+</html>
