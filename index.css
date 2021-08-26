@@ -27,7 +27,7 @@ header div {
 .header-title > h1 {
   position: absolute;
   opacity: 0;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-name: show-up-left;
   animation-duration: 2s;
   animation-duration: leaner;
@@ -40,7 +40,7 @@ header div {
 .header-title > p {
   position: absolute;
   opacity: 0;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-name: show-up-left;
   animation-duration: 2s;
   animation-duration: leaner;
@@ -51,7 +51,7 @@ header div {
 }
 .header-image {
   position: absolute;
-  background-color: #000;
+  max-width: 626px;
   color: #fff;
   /* 애니메이션 이름 */
   animation-name: show-up-right;
@@ -81,6 +81,7 @@ header div {
 }
 .header-image > img {
   width: 100%;
+  object-fit: cover;
 }
 
 table {
