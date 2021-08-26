@@ -1,39 +1,101 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 header {
-    height: 30%;
-    display: flex;
-    transition: left .3s ease-out .3s;
+  height: 52%;
+  display: flex;
+  transition: left 0.3s ease-out 0.3s;
+  align-items: center;
+  padding: 0 20px;
 }
 
 header div {
-    width: 50%;
+  width: 50%;
 }
 
-.blue {
-    background-color: #5c6aff;
+.header-wrapper {
+  background-color: #5c6aff;
 }
 
-.orange {
-    background-color: #ff9f5c;
+.header-title {
+}
+
+.header-title > h1 {
+  position: absolute;
+  opacity: 0;
+  animation-delay: 2s;
+  animation-name: show-up-left;
+  animation-duration: 2s;
+  animation-duration: leaner;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  top: 100px;
+}
+
+.header-title > p {
+  position: absolute;
+  opacity: 0;
+  animation-delay: 4s;
+  animation-name: show-up-left;
+  animation-duration: 2s;
+  animation-duration: leaner;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  top: 200px;
+}
+.header-image {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  /* 애니메이션 이름 */
+  animation-name: show-up-right;
+  animation-duration: 2s;
+  animation-duration: leaner;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes show-up-right {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 100px;
+  }
+}
+@-webkit-keyframes show-up-left {
+  0% {
+    left: -100px;
+    opacity: 1;
+  }
+  100% {
+    left: 100px;
+    opacity: 1;
+  }
+}
+.header-image > img {
+  width: 100%;
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 td[colspan="2"] {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
